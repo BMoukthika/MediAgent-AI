@@ -1,25 +1,88 @@
-# MediAgent AI
+# 🩺 MediAgent AI
+
+A multi-agent Medical Information Assistant built using OpenAI Agents SDK.
 
 ## Overview
 
-MediAgent AI is a healthcare information assistant built using the OpenAI Agents SDK.
+MediAgent AI helps medical representatives quickly understand medicine-related information by orchestrating multiple AI agents.
 
-This project is being built step by step while learning Agentic AI.
+The system uses specialized agents for:
 
----
+- Medical information extraction
+- Evidence verification
+- Professional report generation
 
-## Current Features
+## Architecture
 
-- Medical Knowledge Agent
+User Question
 
----
+↓
 
-## Planned Features
+Medical Knowledge Agent
 
-- Evidence Agent
-- Safety Agent
-- Representative Explanation Agent
-- Async Orchestration
-- Gradio UI
-- Render Deployment
-- RAG Integration
+↓
+
+Evidence Agent (Web Search)
+
+↓
+
+Report Agent
+
+↓
+
+Professional Medical Representative Report
+
+
+## Tech Stack
+
+- Python
+- OpenAI Agents SDK
+- GPT Models
+- AsyncIO
+- Structured Outputs (Pydantic)
+- Gradio
+- Render
+
+
+## Features
+
+✅ Multi-agent orchestration
+
+✅ Async execution
+
+✅ Structured outputs
+
+✅ Web search integration
+
+✅ Error handling
+
+✅ Gradio interface
+
+
+## Run Locally
+
+Clone repository:
+git clone <repository-url>
+
+
+Install dependencies:
+pip install -r requirements.txt
+
+
+Create `.env`
+Add:
+
+
+OPENAI_API_KEY=your_key
+
+
+Run:
+python app.py
+
+
+
+## Future Improvements
+
+- RAG using medical documents
+- MCP integrations
+- Knowledge base search

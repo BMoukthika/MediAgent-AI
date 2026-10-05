@@ -4,6 +4,8 @@ import gradio as gr
 
 from services import run_mediagent
 
+import os
+
 
 # -----------------------------
 # Wrapper for Gradio
@@ -74,4 +76,9 @@ Ask a medicine-related question and receive:
 
 
 if __name__ == "__main__":
-    demo.launch()
+    port = int(os.environ.get("PORT", 7860))
+
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=port
+    )
